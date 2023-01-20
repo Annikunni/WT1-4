@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+let n1 = 0, n2 = 1, n3;
+let number1 = prompt("give me a number");
+
+
+
+
+
+if(number1%2 == 0){
+    document.write("Even <br>");
+} else {
+    document.write("Odd <br>");
+}
+
+document.write("Square of " + number1 + " is: " );
+document.write(number1 * number1 + "<br>");
+
+function fib(){
+    for(var i = 0; i<number1; i++) {
+    document.write(n1 + "<br>");
+    n3 = n1 + n2;
+    n1 = n2;
+    n2 = n3;
+    
+    if(n1> number1){
+        break;
+    }
+}
+}
+
+fib();
+
+
+
+
+
+function erase(){
+    let para = document.querySelectorAll("p");
+    for(var i = 0; i<para.length; i++){
+        para[i].innerHTML = "No data here...";
+    }    
+}
+
+
+</script>
+
+<style>
+    body {
+        background: gray;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ad dolorum reiciendis suscipit praesentium harum sint 
+        laborum maiores fugit itaque minima, sed inventore, voluptas, vero eius odit placeat qui illo. Natus quaerat deleniti exercitationem
+         tempora minus veniam expedita neque deserunt iste voluptate. Libero voluptatem fugit quis similique hic natus vero quam veniam soluta 
+         saepe in molestias, rerum exercitationem. Neque fugiat ipsa labore quisquam, totam explicabo sunt, fugit, quos quaerat quis atque 
+         accusamus quas assumenda iusto qui laboriosam nemo cumque maxime expedita iste officiis. Blanditiis rem libero necessitatibus, 
+         exercitationem odit corrupti delectus amet ipsum enim. Totam delectus, eos provident nihil et sit iure architecto. Non magnam 
+         temporibus consequuntur quod ducimus rem eaque dolor quae molestiae doloribus atque accusantium, deserunt sunt reprehenderit nisi 
+         libero sed dicta quam culpa beatae maxime nobis tempore qui dolorum! Aspernatur quisquam sint repellendus animi ipsa. Molestiae quasi
+          blanditiis aspernatur atque asperiores harum iure, consequuntur obcaecati aut et voluptatum necessitatibus beatae totam debitis 
+          soluta deserunt vel. Consequuntur, iusto commodi. Officiis at animi nostrum earum. Qui, quos officia explicabo amet natus similique!
+           Sapiente voluptate quis accusamus officiis provident illum. Tempora iste perferendis tenetur fugit veritatis eaque aperiam ab 
+           repudiandae suscipit architecto, quae porro dolore molestiae minus esse, vitae corrupti itaque fugiat temporibus accusamus placeat 
+           rem! Quo non ab quasi esse eos facere corporis officiis explicabo voluptatem praesentium voluptatibus sunt, modi odio veniam qui fuga
+            fugiat possimus dolores assumenda, perferendis placeat! </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem beatae adipisci odio deleniti magni quam laudantium ad sed enim in.
+                Eius inventore dicta blanditiis quae facere ipsa doloribus eligendi minus 
+            perferendis? Libero culpa minima quibusdam similique commodi reiciendis cum ducimus illo eos, esse eum excepturi aperiam porro, 
+            dignissimos incidunt! Cupiditate maxime quidem ex soluta? Vero ullam aperiam minus culpa non beatae id optio quae nobis numquam 
+            dolore praesentium, qui sapiente repellat sequi similique veritatis eligendi hic quia? Neque corporis itaque necessitatibus. 
+            Doloremque voluptate, illo blanditiis non ratione nemo illum.
+            </p>
+
+    <input id="myn" />
+    <button onclick="erase()"> Do not click!</button>
+</body>
+</html>
